@@ -60,7 +60,13 @@ The analysis is based on the iML1515 genome-scale metabolic model of *Escherichi
 ## Reproducibility
 
 The computational analysis is performed in Python using COBRApy. Required Python packages are listed in `requirements.txt`.
+## Results
 
+The computational analysis demonstrated an increase in predicted hydrogen production with increasing glucose uptake under the applied model constraints.
+
+![Hydrogen production](results/hydrogen_production.png)
+
+The graph illustrates the relationship between glucose uptake and predicted hydrogen production based on Flux Balance Analysis (FBA).
 ## Important Note
 
 All results are computational predictions obtained through metabolic modeling and Flux Balance Analysis (FBA). They do not represent experimentally validated measurements. The study is based on an existing metabolic model and does not claim experimental validation or de novo reconstruction of the iML1515 model.
