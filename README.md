@@ -1,50 +1,71 @@
-# E. coli Biohydrogen Production: Metabolic Model Analysis
+# E. coli Biohydrogen Production: Metabolic Model Reconstruction and Analysis
 
 ## Overview
 
-This repository contains a computational analysis of hydrogen (H₂) production in *Escherichia coli* using the genome-scale metabolic model iML1515.
+This project focuses on the computational analysis of hydrogen production in *Escherichia coli* using the genome-scale metabolic model iML1515.
 
-The study focuses on metabolic pathways involved in hydrogen production and evaluates how different metabolic constraints and interventions affect hydrogen yield.
+The study investigates metabolic pathways involved in biohydrogen production and evaluates how selected environmental and metabolic constraints influence hydrogen yield.
 
-## Objectives
+## Research Objectives
 
 - Analyze the genome-scale metabolic model of *E. coli*.
 - Investigate the role of formate hydrogen lyase (FHL) in hydrogen production.
-- Evaluate the influence of glucose uptake and growth rate on hydrogen yield.
-- Assess the effects of selected metabolic pathway constraints on hydrogen production.
-- Identify metabolic factors that may contribute to improving biohydrogen production.
+- Evaluate the influence of anaerobic conditions on metabolic fluxes.
+- Analyze the relationship between glucose uptake, growth rate and hydrogen production.
+- Assess the effects of selected metabolic pathway constraints on hydrogen yield.
 
-## Tools and Methods
+## Methods
+
+- Genome-scale metabolic modeling
+- Flux Balance Analysis (FBA)
+- Anaerobic growth simulations
+- Metabolic flux analysis
+- Computational evaluation of hydrogen production
+
+## Tools and Technologies
 
 - Python
-- Google Colab
 - COBRApy
-- Flux Balance Analysis (FBA)
-- Genome-scale metabolic modeling
+- Google Colab
+- pandas
+- NumPy
+- Matplotlib
+- SciPy
 
-## Methodology
+## Repository Structure
 
-The iML1515 metabolic model was analyzed using COBRApy in Google Colab. Flux Balance Analysis was applied to investigate metabolic fluxes and estimate hydrogen production under different model conditions.
+```text
+E-coli-biohydrogen-model/
+│
+├── data/
+│   └── iML1515.xml.gz
+│
+├── notebooks/
+│   └── E_coli_biohydrogen_analysis.ipynb
+│
+├── results/
+│   └── README.md
+│
+├── scripts/
+│   └── README.md
+│
+├── requirements.txt
+└── README.md
+```
 
-The analysis included:
-- Evaluation of the initial metabolic model.
-- Investigation of formate hydrogen lyase activity.
-- Analysis of anaerobic growth conditions.
-- Evaluation of the effects of glucose uptake limitations.
-- Assessment of selected metabolic pathway constraints.
+## Model
 
-## Repository Contents
+The analysis is based on the iML1515 genome-scale metabolic model of *Escherichia coli*.
 
-- `E_coli_biohydrogen_analysis.ipynb` – Jupyter notebook containing the computational analysis and results.
-- `iML1515 (2).xml.gz` – genome-scale metabolic model of *E. coli* in SBML format.
+## Reproducibility
+
+The computational analysis is performed in Python using COBRApy. Required Python packages are listed in `requirements.txt`.
 
 ## Important Note
 
-All results presented in this repository are computational predictions obtained through metabolic modeling. They do not represent experimentally validated measurements. The analysis is based on an existing genome-scale metabolic model and does not involve experimental validation.
+All results are computational predictions obtained through metabolic modeling and Flux Balance Analysis (FBA). They do not represent experimentally validated measurements. The study is based on an existing metabolic model and does not claim experimental validation or de novo reconstruction of the iML1515 model.
 
 ## Author
 
-Yuliia Marynych
-Khrystyna Malysheva
-
+Yuliia Marynych Khrystyna Malysheva
 Stepan Gzhytskyi National University of Veterinary Medicine and Biotechnologies Lviv
